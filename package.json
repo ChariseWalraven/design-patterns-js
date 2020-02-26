@@ -2,9 +2,10 @@
   "name": "js",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "start": "parcel serve ./src/index.html -d ./build/index.html"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "homepage": "https://github.com/ChariseWalraven/design-patterns-js#readme",
   "devDependencies": {
     "jest": "^25.1.0"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
   }
 }
